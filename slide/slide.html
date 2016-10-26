@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>轮播图</title>
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" href="slide.css" charset="utf-8">
+        <script>
+            $('documrnt').ready(function(){
+                var  width = 500;
+                allSlide(width, urlarray)
+            })
+        </script>
+    </head>
+    <body>
+        <div class="contents">
+            <div class="slide-container">
+                <!-- 图片div和切换按钮 -->
+                <div class="slide-images" data-show='0'>
+                    <!-- <img class='slide-img slide-img-show' src="images/1.jpg" alt="" />
+                    <img class='slide-img' src="images/2.jpg" alt="" />
+                    <img class='slide-img' src="images/3.jpg" alt="" /> -->
+                    <button class="slide-button slide-button-left vertical-center" type="button" ><</button>
+                    <button class="slide-button slide-button-right vertical-center" type="button" >></button>
+                </div>
+                <!-- 指示标  -->
+                <div class="slide-indicators">
+                    <!-- <div class="slide-indicator slide-indicator-show" >1</div>
+                    <div class="slide-indicator">2</div>
+                    <div class="slide-indicator">3</div> -->
+                </div>
+                <!-- 缩略图 -->
+                <div class="slide-minimages">
+                    <!-- <img class='mini-img mini-show' src="images/1.jpg" width="60"alt="" />
+                    <img class='mini-img' src="images/2.jpg" width="60" alt="" />
+                    <img class='mini-img' src="images/3.jpg" width="60" alt="" /> -->
+                </div>
+            </div>
+        </div>
+        <script src='slide.js'></script>
+    </body>
+</html>
